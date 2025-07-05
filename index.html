@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Página Inicial</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2>Paralelo</h2>
+        <hr />
+        <ul>
+          <li>
+            <a href="/index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+          </li>
+          <li>
+            <a href="pages/catalago.html"
+              ><i class="fa-solid fa-tag"></i>Catálogos</a
+            >
+          </li>
+          <li>
+            <a href="/pages/categoria.html"
+              ><i class="fa-solid fa-list"></i>Categorias</a
+            >
+          </li>
+          <hr />
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <span></span>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-img">
+              <div class="categoria3">
+                <h3>
+                  <a
+                    href="/pages/rpg.html"
+                    style="color: white; text-decoration: none"
+                    >RPG</a
+                  >
+                </h3>
+              </div>
+              <div class="preco3">R$24.99</div>
+              <img src="assets/imgs/stardew valley.jpg" alt="Foto 01" />
+              <h3>
+                <a
+                  href="pages/detalhes.html?gameId=jogo01"
+                  style="color: white; text-decoration: none"
+                >
+                  Stardew Valley</a
+                >
+              </h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <div class="categoria3">
+                <h3>
+                  <a
+                    href="/pages/tiro.html"
+                    style="color: white; text-decoration: none"
+                    >TIRO</a
+                  >
+                </h3>
+              </div>
+              <div class="preco3">R$299.90</div>
+              <img src="assets/imgs/Red Dead 2.jpg" alt="Foto 02" />
+              <h3>
+                <a
+                  href="pages/detalhes.html?gameId=jogo02"
+                  style="color: white; text-decoration: none"
+                >
+                  Red Dead 2</a
+                >
+              </h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <div class="categoria3">
+                <h3>
+                  <a
+                    href="/pages/rpg.html"
+                    style="color: white; text-decoration: none"
+                    >RPG</a
+                  >
+                </h3>
+              </div>
+              <div class="preco3">R$299.90</div>
+              <img src="assets/imgs/baldurs gate3.png" alt="Foto 03" />
+              <h3>
+                <a
+                  href="pages/detalhes.html?gameId=jogo03"
+                  style="color: white; text-decoration: none"
+                >
+                  Baldurs Gate 3</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+
+    <section class="conteiner">
+      <img src="assets/imgs/gta v.jpg" alt="gta v" />
+      <div class="nome1">
+        <h3>
+          <a
+            href="pages/detalhes.html?gameId=jogo11"
+            style="color: white; text-decoration: none"
+          >
+            Grand Theft Auto V</a
+          >
+        </h3>
+      </div>
+      <div class="preco1">R$59.90</div>
+      <div class="categoria1">
+        <h3>
+          <a href="/pages/tiro.html" style="color: white; text-decoration: none"
+            >TIRO</a
+          >
+        </h3>
+      </div>
+    </section>
+    <section class="conteiner2">
+      <img src="assets/imgs/out last.jpg" alt="gta v" />
+      <div class="nome1">
+        <h3>
+          <a
+            href="pages/detalhes.html?gameId=jogo06"
+            style="color: white; text-decoration: none"
+          >
+            Out Last</a
+          >
+        </h3>
+      </div>
+      <div class="preco1">R$59.99</div>
+      <div class="categoria1">
+        <h3>
+          <a
+            href="/pages/terror.html"
+            style="color: white; text-decoration: none"
+            >TERROR</a
+          >
+        </h3>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/css/carrosel.js"></script>
+  </body>
+</html>

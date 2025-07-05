@@ -1,0 +1,110 @@
+{
+  "jogo01": {
+    "title": "Stardew Valley",
+    "image": "/assets/imgs/12anos.png",
+    "video": "/assets/trailers/Stardew Valley Trailer.mp4",
+    "description": "Stardew Valley é um RPG sem fim da vida no campo! Você herdou a antiga fazenda de seu avô no Vale do Orvalho. Equipado com ferramentas de segunda mão e algumas moedas, você irá começar sua nova vida. Será que você consegue aprender a viver da terra e transformar esses campos absurdamente vegetados em uma casa próspera? Não vai ser fácil. Desde que Corporação Joja veio à cidade, os antigos modos de vida quase desapareceram. O Centro Comunitário, uma vez o lugar mais visitado da cidade, agora está em ruínas. Mas o vale parece cheio de oportunidades. Com um pouco de dedicação, você pode ser a pessoa que restaurará a grandeza do Vale do Orvalho!",
+    "rating": "Classificação",
+    "genre": "Genero : RPG",
+    "link": "https://x.com/concernedape"
+  },
+  "jogo02": {
+    "title": "Red Dead II",
+    "image": "/assets/imgs/18anos.png",
+    "video": "/assets/trailers/Red Dead Redemption 2 Trailer.mp4",
+    "description": "Red Dead Redemption 2 (estilizado Red Dead Redemption II) é um jogo eletrônico de ação-aventura desenvolvido e publicado pela Rockstar Games. É o terceiro título da série Red Dead e uma prequela de Red Dead Redemption, tendo sido lançado em outubro de 2018 para PlayStation 4 e Xbox One e em novembro de 2019 para Microsoft Windows e Google Stadia. A história se passa em 1899 em uma representação ficcional do oeste, meio-oeste e sul dos Estados Unidos e acompanha o fora da lei Arthur Morgan, que precisa lidar com o declínio do Velho Oeste e sobreviver à perseguição de forças governamentais, gangues rivais e outros adversários",
+    "rating": "Classificação ",
+    "genre": "Genero : Tiro",
+    "link": "https://x.com/RockstarGames"
+  },
+  "jogo03": {
+    "title": "Baldurs Gate III",
+    "image": "/assets/imgs/16anos.png",
+    "video": "/assets/trailers/Baldur's Gate 3_ Launch Trailer.mp4",
+    "description": "Baldur's Gate III é um jogo eletrônico de RPG com elementos para um jogador e multijogador. Jogadores podem criar um ou mais personagens e formar um grupo ao lado de uma variedade de personagens já criados para explorar o enredo do jogo. Além disso, jogadores podem escolher um de seus personagens para se juntar a outros jogadores online e formar um grupo. O combate do jogo é baseado por turnos, bem como Divinity: Original Sin e Divinity: Original Sin II, também desenvolvidos pela Larian Studios. Suas regras seguem a quinta edição de Dungeons & Dragons.",
+    "rating": "Classificação ",
+    "genre": " Genero : RPG ",
+    "link": "https://x.com/larianstudios"
+  },
+  "jogo04": {
+    "title": "Valorant",
+    "image": "/assets/imgs/16anos.png",
+    "video": "/assets/trailers/VALORANT.mp4",
+    "description": "Duas equipes de cinco jogam uma contra a outra, e os jogadores assumem o papel de agentes com habilidades únicas. No modo de jogo principal, a equipe atacante tem uma bomba, chamada Spike, que eles precisam plantar em um local. Se a equipe atacante proteger com sucesso a bomba e ela detonar, eles ganharão um ponto. Se a equipe defensora desarmar com sucesso a bomba ou o cronômetro de 100 segundos da rodada expirar, a equipe defensora receberá um ponto. Eliminar todos os membros da equipe adversária também ganha uma rodada. A primeira equipe a vencer o melhor de 24 rodadas vence a partida.O jogo também promove um servidor com tick rate de 128, que garante uma jogabilidade suave e baixo ping com uma expansão global de data centers.",
+    "rating": "Classificação ",
+    "genre": "Genero : Tiro",
+    "link": "https://x.com/valorant"
+  },
+  "jogo05": {
+    "title": "Alien Isolation",
+    "image": "/assets/imgs/18anos.png",
+    "video": "/assets/trailers/Alien_ Isolation - Launch Trailer.mp4",
+    "description": "Alien: Isolation é um jogo eletrônico de ação-aventura e sobrevivência desenvolvido pela Creative Assembly e publicado pela Sega. Ele foi lançado originalmente para as plataformas Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360 e Xbox One. O jogo é baseado na série de filmes de terror de ficção científica Alien, e acontece quinze anos após os eventos do filme original Alien de 1979, seguindo a engenheira Amanda Ripley, filha da protagonista Ellen Ripley de Alien, enquanto ela investiga o desaparecimento de sua mãe.",
+    "rating": "Classificação",
+    "genre": "Genero : Terror",
+    "link": "https://x.com/AlienIsolation"
+  },
+  "jogo06": {
+    "title": "OUTLAST",
+    "image": "/assets/imgs/18anos.png",
+    "video": "/assets/trailers/Outlast - Official Trailer.mp4",
+    "description": "Outlast é um jogo de survival horror em primeira pessoa, ambientado em um hospício. O personagem principal, Miles Upshur, é incapaz de combater, com exceção de certas partes do jogo em que ele empurra os inimigos. Para navegar no ambiente, o personagem é capaz de subir para bordas, saltar sobre obstáculos baixos, rastejar e escorregar em aberturas estreitas. Os inimigos são incapazes de fazer qualquer dessas manobras, exceto saltar sobre obstáculos baixos, o que dá ao jogador uma certa vantagem. Além disso, o jogador sobrevive fugindo dos inimigos, escondendo dentro de armários ou debaixo das camas, embora certos inimigos possam procurar nestes locais e tentar localizar o jogador por um curto período de tempo antes de prosseguir.",
+    "rating": "Classificação",
+    "genre": "Genero : Terror",
+    "link": "https://x.com/theredbarrels"
+  },
+  "jogo07": {
+    "title": "God Of War",
+    "image": "/assets/imgs/18anos.png",
+    "video": "/assets/trailers/God of War.mp4",
+    "description": " um jogo eletrônico de ação-aventura desenvolvido pela Santa Monica Studio e publicado pela Sony Interactive Entertainment (SIE). Foi lançado em 20 de abril de 2018 para PlayStation 4 e em 14 de janeiro de 2022 para Microsoft Windows. É o oitavo título da série God of War e também o oitavo em ordem cronológica, sendo sequência dos eventos ocorridos em God of War III (2010). Ao contrário dos jogos anteriores, que eram vagamente baseados na mitologia grega, este título é vagamente baseado na mitologia nórdica, com a maior parte do tempo situado na antiga Noruega no reino de Midgard. Pela primeira vez na série, há dois protagonistas principais: Kratos, o antigo deus da guerra grego que é acompanhado por seu jovem filho Atreus. Após a morte da segunda esposa de Kratos e mãe de Atreus, eles viajam para cumprir sua promessa de espalhar suas cinzas no pico mais alto dos nove reinos. Kratos mantém seu passado conturbado em segredo de Atreus, que não tem consciência de sua natureza divina. Ao longo da jornada, eles encontram monstros e deuses do mundo nórdico.",
+    "rating": "Classificação",
+    "genre": "Genero : Aventura",
+    "link": "https://x.com/sonysantamonica"
+  },
+  "jogo08": {
+    "title": "The Last Of Us Part II",
+    "image": "/assets/imgs/18anos.png",
+    "video": "/assets/trailers/The last of us part II.mp4",
+    "description": "The Last of Us Part II é um jogo eletrônico de ação-aventura desenvolvido pela Naughty Dog e publicado pela Sony Interactive Entertainment. É o segundo jogo da franquia e foi lançado em 19 de junho de 2020 exclusivamente para PlayStation 4. Ambientado cinco anos após os eventos de The Last of Us, o jogador assume o papel de duas protagonistas em um Estados Unidos pós-apocalíptico: Ellie, que busca por vingança após um evento traumático, e Abby, uma soldada que se envolve em um conflito entre uma milícia e um culto. O jogo contém elementos de survival horror e é jogado numa perspectiva de terceira pessoa. Os jogadores podem usar armas de fogo, arcos, armas improvisadas, esquiva e furtividade para se defenderem de seres humanos hostis e criaturas infectadas por uma mutação do fungo Cordyceps.",
+    "rating": "Classificação",
+    "genre": "Genero : Aventura",
+    "link": "https://x.com/naughty_dog"
+  },
+  "jogo09": {
+    "title": "Euro Truck Simulator",
+    "image": "/assets/imgs/livre.png",
+    "video": "/assets/trailers/Euro Truck Simulator.mp4",
+    "description": "Euro Truck Simulator 2 é um jogo de simulação de caminhões desenvolvido, e publicado pela SCS Software para Microsoft Windows, Linux e recentemente para OSX (Mac). Foi inicialmente lançado como um jogo de desenvolvimento aberto em 19 de outubro de 2012. O jogo é uma sequência direta ao jogo Euro Truck Simulator (2008) sendo o segundo jogo da série (Euro Truck Simulator). O jogador pode dirigir vários caminhões através de um mapa que representa a Europa e suas estradas, pegando cargas de vários locais e realizando entregas. Conforme o jogo avança, o jogador pode comprar caminhões, garagens, semirreboques e contratar motoristas para trabalhar na empresa criada pelo jogador.",
+    "rating": "Classificação",
+    "genre": "Genero : Simulador",
+    "link": "https://x.com/scssoftware"
+  },
+  "jogo10": {
+    "title": "Goat Simulator",
+    "image": "/assets/imgs/livre.png",
+    "video": "/assets/trailers/Goat Simulator.mp4",
+    "description": "Goat Simulator (Simulador de Cabra em português) é um jogo de simulação com perspectiva em terceira pessoa desenvolvido pela Coffee Stain Studios. Foi lançado para Microsoft Windows via Steam em 1 de Abril de 2014, e as versões para o Mac OS X e Linux foram liberadas em 27 de junho de 2014. No jogo o jogador controla uma cabra que visa fazer o máximo dano possível em torno de um mapa de mundo aberto, sem quaisquer outros objetivos maiores. O jogo, desenvolvido inicialmente como um protótipo de uma piada e mostrado em um estado alfa no início de vídeos do YouTube, foi recebido com entusiasmo e atenção, o que levou o estúdio a construir o jogo em um estado disponível controlando vários bugs e falhas para manter o valor de entretenimento do jogo.",
+    "rating": "Classificação",
+    "genre": "Genero : Simulador",
+    "link": "https://x.com/goatsimulator"
+  },
+  "jogo11": {
+    "title": "Grad Theft Auto V",
+    "image": "/assets/imgs/18anos.png",
+    "video": "/assets/trailers/Grand Theft Auto V.mp4",
+    "description": "Grand Theft Auto V é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. É o sétimo título principal da série Grand Theft Auto e foi lançado originalmente em 17 de setembro de 2013 para PlayStation 3 e Xbox 360, com remasterizações lançadas em 2014 para PlayStation 4 e Xbox One, em 2015 para Microsoft Windows e em 2022 para PlayStation 5 e Xbox Series X/S. O jogo se passa no estado ficcional de San Andreas, com a história da campanha um jogador seguindo três criminosos e seus esforços para realizarem assaltos sob a pressão de uma agência governamental. O mundo aberto permite que os jogadores naveguem livremente pelas áreas rurais e urbanas de San Andreas.",
+    "rating": "Classificação ",
+    "genre": "Genero : Tiro",
+    "link": "https://x.com/rockstargames"
+  },
+  "jogo12": {
+    "title": "Elden Ring",
+    "image": "/assets/imgs/16anos.png",
+    "video": "/assets/trailers/ELDEN RING Official.mp4",
+    "description": "Elden Ring é um jogo eletrônico de RPG de ação, jogado de uma perspectiva em terceira pessoa e apresenta elementos semelhantes aos encontrados em seus antecessores, a série Souls, além de Bloodborne e Sekiro: Shadows Die Twice, com uma jogabilidade focada em combate e exploração. O diretor Hidetaka Miyazaki explicou que os jogadores começam em um ambiente linear, mas eventualmente progridem para explorar livremente as Terras Intermédias, incluindo suas seis áreas principais, bem como castelos, fortalezas e catacumbas espalhadas pelo vasto mapa de mundo aberto. Essas áreas principais são interconectadas através de um ponto central no qual os jogadores podem acessar mais tarde conforme progridem no jogo — semelhante ao Santuário do Enlace de Fogo de Dark Souls — e serão exploráveis ​​usando a montaria do personagem como o principal meio de transporte, embora um sistema de viagem rápida seja uma opção disponível. Ao longo do jogo, os jogadores encontram personagens não-jogáveis (NPCs) e inimigos, incluindo os semideuses que governam cada área principal e servirão como os chefes principais do jogo.",
+    "rating": "Classificação",
+    "genre": "Genero : RPG",
+    "link": "https://x.com/eldenring"
+  }
+}
