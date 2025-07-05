@@ -7,9 +7,10 @@
   --tertiary-bg: #171a21;
   --primary-text: #c7d5e0;
   --secondary-text: #8f98a0;
-  --accent-color: #66c0f4;
-  --accent-hover: #4c9cd6;
-  --success-color: #5ba55b;
+  --accent-color: #4ade80;
+  --accent-hover: #22c55e;
+  --accent-dark: #16a34a;
+  --success-color: #10b981;
   --warning-color: #d4af37;
   --sidebar-width: 240px;
   --border-radius: 8px;
@@ -22,8 +23,10 @@
   --spacing-lg: 24px;
   --spacing-xl: 32px;
   --spacing-xxl: 48px;
-  --gradient-primary: linear-gradient(135deg, #66c0f4 0%, #417a9b 100%);
+  --gradient-primary: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
   --gradient-secondary: linear-gradient(135deg, #2a475e 0%, #1b2838 100%);
+  --green-glow: rgba(74, 222, 128, 0.3);
+  --green-glow-strong: rgba(74, 222, 128, 0.5);
 }
 
 * {
@@ -60,7 +63,7 @@ a:hover {
   color: var(--accent-color);
 }
 
-/* Sidebar styles - Steam inspired */
+/* Sidebar styles - Green themed */
 .sidebar {
   position: fixed;
   top: 0;
@@ -69,7 +72,7 @@ a:hover {
   height: 100vh;
   background: var(--gradient-secondary);
   padding: var(--spacing-xl) var(--spacing-lg);
-  border-right: 1px solid rgba(102, 192, 244, 0.2);
+  border-right: 1px solid var(--green-glow);
   z-index: 1000;
   transition: transform var(--transition-speed) ease;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
@@ -83,7 +86,7 @@ a:hover {
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(102, 192, 244, 0.5);
+  text-shadow: 0 0 10px var(--green-glow-strong);
   position: relative;
 }
 
@@ -97,6 +100,7 @@ a:hover {
   height: 2px;
   background: var(--gradient-primary);
   border-radius: 2px;
+  box-shadow: 0 0 8px var(--green-glow);
 }
 
 .sidebar ul li {
@@ -114,7 +118,7 @@ a:hover {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(102, 192, 244, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, var(--green-glow), transparent);
   transition: left 0.6s ease;
 }
 
@@ -123,9 +127,9 @@ a:hover {
 }
 
 .sidebar ul li:hover {
-  background: rgba(102, 192, 244, 0.1);
+  background: var(--green-glow);
   transform: translateX(8px);
-  box-shadow: 0 4px 15px rgba(102, 192, 244, 0.2);
+  box-shadow: 0 4px 15px var(--green-glow);
 }
 
 .sidebar ul li a {
@@ -145,12 +149,19 @@ a:hover {
   text-align: center;
   font-size: 1.1rem;
   color: var(--accent-color);
+  transition: all var(--transition-speed) ease;
+}
+
+.sidebar ul li:hover a i {
+  color: var(--accent-hover);
+  text-shadow: 0 0 8px var(--green-glow);
 }
 
 .sidebar ul li a[aria-current="page"] {
-  background: rgba(102, 192, 244, 0.2);
+  background: var(--green-glow-strong);
   color: var(--accent-color);
   font-weight: 600;
+  box-shadow: 0 0 15px var(--green-glow);
 }
 
 /* Main content area */
@@ -160,14 +171,14 @@ a:hover {
   background: var(--tertiary-bg);
 }
 
-/* Search component - Steam inspired */
+/* Search component - Green themed */
 .search-section {
   display: flex;
   justify-content: center;
   padding: var(--spacing-xl) var(--spacing-lg);
   margin-left: var(--sidebar-width);
   background: var(--primary-bg);
-  border-bottom: 1px solid rgba(102, 192, 244, 0.2);
+  border-bottom: 1px solid var(--green-glow);
 }
 
 .search {
@@ -175,7 +186,7 @@ a:hover {
   display: flex;
   align-items: center;
   background: rgba(23, 26, 33, 0.8);
-  border: 2px solid rgba(102, 192, 244, 0.3);
+  border: 2px solid var(--green-glow);
   border-radius: 25px;
   padding: var(--spacing-md) var(--spacing-lg);
   transition: all var(--transition-speed) ease;
@@ -187,7 +198,7 @@ a:hover {
 .search:focus-within {
   border-color: var(--accent-color);
   background: rgba(23, 26, 33, 0.95);
-  box-shadow: 0 0 20px rgba(102, 192, 244, 0.3);
+  box-shadow: 0 0 20px var(--green-glow-strong);
   transform: translateY(-2px);
 }
 
@@ -200,6 +211,7 @@ a:hover {
 
 .search:focus-within .search-icon {
   color: var(--accent-hover);
+  text-shadow: 0 0 8px var(--green-glow);
 }
 
 .search-input {
@@ -228,7 +240,7 @@ a:hover {
   margin: 0 auto;
 }
 
-/* Game card styles - Steam inspired */
+/* Game card styles - Green themed */
 .game-card {
   position: relative;
   width: 100%;
@@ -241,7 +253,7 @@ a:hover {
   transition: all var(--transition-speed) ease;
   cursor: pointer;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(102, 192, 244, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.1);
 }
 
 .game-card::before {
@@ -295,13 +307,13 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: var(--spacing-sm);
-  box-shadow: 0 2px 10px rgba(102, 192, 244, 0.3);
+  box-shadow: 0 2px 10px var(--green-glow);
   transition: all var(--transition-speed) ease;
 }
 
 .game-category:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(102, 192, 244, 0.5);
+  box-shadow: 0 4px 15px var(--green-glow-strong);
 }
 
 .game-title {
@@ -315,6 +327,7 @@ a:hover {
 
 .game-card:hover .game-title {
   color: var(--accent-color);
+  text-shadow: 0 0 10px var(--green-glow);
 }
 
 /* Suggestions dropdown */
@@ -324,7 +337,7 @@ a:hover {
   left: 0;
   right: 0;
   background: var(--primary-bg);
-  border: 1px solid rgba(102, 192, 244, 0.3);
+  border: 1px solid var(--green-glow);
   border-radius: var(--border-radius);
   max-height: 300px;
   overflow-y: auto;
@@ -337,14 +350,14 @@ a:hover {
 .suggestion {
   padding: var(--spacing-md) var(--spacing-lg);
   cursor: pointer;
-  border-bottom: 1px solid rgba(102, 192, 244, 0.1);
+  border-bottom: 1px solid rgba(74, 222, 128, 0.1);
   transition: all var(--transition-speed) ease;
   color: var(--primary-text);
 }
 
 .suggestion:hover,
 .suggestion-active {
-  background: rgba(102, 192, 244, 0.1);
+  background: var(--green-glow);
   color: var(--accent-color);
 }
 
@@ -352,7 +365,7 @@ a:hover {
   border-bottom: none;
 }
 
-/* Button styles - Steam inspired */
+/* Button styles - Green themed */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -367,15 +380,15 @@ a:hover {
   cursor: pointer;
   transition: all var(--transition-speed) ease;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(102, 192, 244, 0.3);
+  box-shadow: 0 4px 15px var(--green-glow);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .btn:hover {
-  background: linear-gradient(135deg, #4c9cd6 0%, #2a5a7a 100%);
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 192, 244, 0.4);
+  box-shadow: 0 8px 25px var(--green-glow-strong);
 }
 
 .btn:active {
@@ -387,7 +400,7 @@ a:hover {
   display: inline-block;
   width: 24px;
   height: 24px;
-  border: 3px solid rgba(102, 192, 244, 0.3);
+  border: 3px solid var(--green-glow);
   border-radius: 50%;
   border-top-color: var(--accent-color);
   animation: spin 1s ease-in-out infinite;
@@ -488,7 +501,7 @@ input:focus {
   z-index: 1001;
   background: var(--gradient-secondary);
   color: var(--accent-color);
-  border: 1px solid rgba(102, 192, 244, 0.3);
+  border: 1px solid var(--green-glow);
   padding: 12px;
   border-radius: var(--border-radius);
   font-size: 18px;

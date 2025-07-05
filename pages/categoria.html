@@ -27,7 +27,7 @@
         font-weight: 700;
         color: var(--accent-color);
         margin-bottom: var(--spacing-xxl);
-        text-shadow: 0 0 20px rgba(102, 192, 244, 0.5);
+        text-shadow: 0 0 20px var(--green-glow-strong);
         text-transform: uppercase;
         letter-spacing: 3px;
       }
@@ -51,7 +51,7 @@
         transition: all var(--transition-speed) ease;
         cursor: pointer;
         box-shadow: var(--shadow);
-        border: 1px solid rgba(102, 192, 244, 0.2);
+        border: 1px solid var(--green-glow);
       }
 
       .category-card::before {
@@ -103,7 +103,7 @@
       .category-card:hover .category-title {
         transform: translate(-50%, 50%) scale(1.1);
         color: var(--accent-color);
-        text-shadow: 0 0 20px rgba(102, 192, 244, 0.8);
+        text-shadow: 0 0 20px var(--green-glow-strong);
       }
 
       .category-title a {
@@ -111,7 +111,7 @@
         text-decoration: none;
       }
 
-      /* Steam-like glow effect */
+      /* Green glow effect */
       .category-card::after {
         content: '';
         position: absolute;
