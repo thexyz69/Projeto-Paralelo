@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/categoria.css" />
+    <link rel="stylesheet" href="/assets/css/common.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -11,112 +11,236 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <title>Página de Categorias</title>
+    <title>Categorias - Paralelo</title>
+    
+    <style>
+      .categories-section {
+        margin-left: var(--sidebar-width);
+        padding: var(--spacing-xxl) var(--spacing-xl);
+        min-height: 100vh;
+        background: var(--tertiary-bg);
+      }
+
+      .categories-title {
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        margin-bottom: var(--spacing-xxl);
+        text-shadow: 0 0 20px var(--green-glow-strong);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--spacing-xl);
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .category-card {
+        position: relative;
+        height: 300px;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all var(--transition-speed) ease;
+        cursor: pointer;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--green-glow);
+      }
+
+      .category-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(23, 26, 33, 0.4) 0%,
+          rgba(23, 26, 33, 0.2) 50%,
+          rgba(23, 26, 33, 0.8) 100%
+        );
+        transition: opacity var(--transition-speed) ease;
+      }
+
+      .category-card:hover {
+        transform: translateY(-12px) scale(1.03);
+        box-shadow: var(--shadow-hover);
+        border-color: var(--accent-color);
+      }
+
+      .category-card:hover::before {
+        background: linear-gradient(
+          135deg,
+          rgba(23, 26, 33, 0.2) 0%,
+          rgba(23, 26, 33, 0.1) 50%,
+          rgba(23, 26, 33, 0.6) 100%
+        );
+      }
+
+      .category-title {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        color: var(--primary-text);
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.9);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        z-index: 2;
+        transition: all var(--transition-speed) ease;
+      }
+
+      .category-card:hover .category-title {
+        transform: translate(-50%, 50%) scale(1.1);
+        color: var(--accent-color);
+        text-shadow: 0 0 20px var(--green-glow-strong);
+      }
+
+      .category-title a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* Green glow effect */
+      .category-card::after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, var(--accent-color), transparent, var(--accent-color));
+        border-radius: var(--border-radius);
+        opacity: 0;
+        transition: opacity var(--transition-speed) ease;
+        z-index: -1;
+      }
+
+      .category-card:hover::after {
+        opacity: 0.3;
+      }
+
+      @media (max-width: 768px) {
+        .categories-section {
+          margin-left: 0;
+          padding: var(--spacing-xl) var(--spacing-lg);
+        }
+
+        .categories-title {
+          font-size: 2.2rem;
+        }
+
+        .categories-grid {
+          grid-template-columns: 1fr;
+          gap: var(--spacing-lg);
+        }
+
+        .category-card {
+          height: 250px;
+        }
+
+        .category-title {
+          font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .categories-title {
+          font-size: 1.8rem;
+        }
+
+        .category-card {
+          height: 200px;
+        }
+
+        .category-title {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="sidebar">
+      <nav class="sidebar" role="navigation" aria-label="Menu principal">
         <h2>Paralelo</h2>
         <hr />
         <ul>
           <li>
-            <a href="/index.html"><i class="fa-solid fa-house"></i>Início</a>
+            <a href="/index.html">
+              <i class="fa-solid fa-house" aria-hidden="true"></i>
+              Início
+            </a>
           </li>
           <li>
-            <a href="/pages/catalago.html"
-              ><i class="fa-solid fa-tag"></i>Catálogos</a
-            >
+            <a href="/pages/catalago.html">
+              <i class="fa-solid fa-tag" aria-hidden="true"></i>
+              Catálogos
+            </a>
           </li>
           <li>
-            <a href="/pages/categoria.html"
-              ><i class="fa-solid fa-list"></i>Categorias</a
-            >
+            <a href="/pages/categoria.html" aria-current="page">
+              <i class="fa-solid fa-list" aria-hidden="true"></i>
+              Categorias
+            </a>
           </li>
-          <hr />
         </ul>
-      </div>
+      </nav>
     </div>
 
-    <div class="corpo">
-      <div class="conteiner">
-        <div class="linha">
-          <div class="imgC1">
-            <div class="rpg-" z-index="1">
-              <h3></h3>
-            </div>
-            <div class="titulo2" z-index="2" bottom="50%">
-              <h3>
-                <a
-                  href="/pages/rpg.html"
-                  style="color: white; text-decoration: none"
-                  >RPG</a
-                >
-              </h3>
-            </div>
-          </div>
-          <div class="imgC5">
-            <div class="rpg-">
-              <h3></h3>
-            </div>
-            <div class="titulo2">
-              <h3>
-                <a
-                  href="/pages/tiro.html"
-                  style="color: white; text-decoration: none"
-                  >TIRO</a
-                >
-              </h3>
-            </div>
-          </div>
-          <div class="imgC3">
-            <div class="rpg-">
-              <h3></h3>
-            </div>
-            <div class="titulo2">
-              <h3>
-                <a
-                  href="/pages/aventura.html"
-                  style="color: white; text-decoration: none"
-                  >AVENTURA</a
-                >
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="linha">
-          <div class="imgC4">
-            <div class="rpg-">
-              <h3></h3>
-            </div>
-            <div class="titulo2">
-              <h3>
-                <a
-                  href="/pages/simulador.html"
-                  style="color: white; text-decoration: none"
-                  >SIMULADOR</a
-                >
-              </h3>
-            </div>
-          </div>
-          <div class="imgC6">
-            <div class="rpg-"></div>
-            <div class="titulo2">
-              <h3>
-                <a
-                  href="/pages/terror.html"
-                  style="color: white; text-decoration: none"
-                  >TERROR</a
-                >
-              </h3>
-            </div>
-          </div>
-        </div>
+    <main class="categories-section" role="main">
+      <h1 class="categories-title">Categorias de Jogos</h1>
+      
+      <div class="categories-grid">
+        <article class="category-card" style="background-image: url('/assets/imgs/img categoria/RPG.png')">
+          <h2 class="category-title">
+            <a href="/pages/rpg.html">RPG</a>
+          </h2>
+        </article>
+
+        <article class="category-card" style="background-image: url('/assets/imgs/img categoria/tiro.png')">
+          <h2 class="category-title">
+            <a href="/pages/tiro.html">Tiro</a>
+          </h2>
+        </article>
+
+        <article class="category-card" style="background-image: url('/assets/imgs/img categoria/aventura.png')">
+          <h2 class="category-title">
+            <a href="/pages/aventura.html">Aventura</a>
+          </h2>
+        </article>
+
+        <article class="category-card" style="background-image: url('/assets/imgs/img categoria/simulador.jpg')">
+          <h2 class="category-title">
+            <a href="/pages/simulador.html">Simulador</a>
+          </h2>
+        </article>
+
+        <article class="category-card" style="background-image: url('/assets/imgs/img categoria/terror.jpg')">
+          <h2 class="category-title">
+            <a href="/pages/terror.html">Terror</a>
+          </h2>
+        </article>
       </div>
-    </div>
+    </main>
+
+    <script type="module">
+      import { initMobileMenu, addScrollToTop } from '/assets/js/utils.js';
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        initMobileMenu();
+        addScrollToTop();
+      });
+    </script>
   </body>
 </html>
