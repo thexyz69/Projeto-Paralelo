@@ -1,0 +1,29 @@
+{
+  "name": "paralelo-game-catalog",
+  "version": "1.0.0",
+  "description": "A game catalog project for educational purposes",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000"
+  },
+  "keywords": [
+    "games",
+    "catalog",
+    "html",
+    "css",
+    "javascript",
+    "educational"
+  ],
+  "authors": [
+    "André Victor",
+    "Wuigor Matteus"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "type": "module"
+}
