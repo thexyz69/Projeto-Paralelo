@@ -18,19 +18,18 @@
         margin-left: var(--sidebar-width);
         padding: var(--spacing-xxl) var(--spacing-xl);
         min-height: 100vh;
+        background: var(--tertiary-bg);
       }
 
       .categories-title {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         font-weight: 700;
-        color: var(--primary-text);
+        color: var(--accent-color);
         margin-bottom: var(--spacing-xxl);
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-        background: linear-gradient(45deg, #fff, var(--accent-color));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        text-shadow: 0 0 20px rgba(102, 192, 244, 0.5);
+        text-transform: uppercase;
+        letter-spacing: 3px;
       }
 
       .categories-grid {
@@ -43,7 +42,7 @@
 
       .category-card {
         position: relative;
-        height: 280px;
+        height: 300px;
         border-radius: var(--border-radius);
         overflow: hidden;
         background-size: cover;
@@ -52,6 +51,7 @@
         transition: all var(--transition-speed) ease;
         cursor: pointer;
         box-shadow: var(--shadow);
+        border: 1px solid rgba(102, 192, 244, 0.2);
       }
 
       .category-card::before {
@@ -63,24 +63,25 @@
         bottom: 0;
         background: linear-gradient(
           135deg,
-          rgba(0, 0, 0, 0.4) 0%,
-          rgba(0, 0, 0, 0.2) 50%,
-          rgba(0, 0, 0, 0.7) 100%
+          rgba(23, 26, 33, 0.4) 0%,
+          rgba(23, 26, 33, 0.2) 50%,
+          rgba(23, 26, 33, 0.8) 100%
         );
         transition: opacity var(--transition-speed) ease;
       }
 
       .category-card:hover {
-        transform: translateY(-10px) scale(1.02);
+        transform: translateY(-12px) scale(1.03);
         box-shadow: var(--shadow-hover);
+        border-color: var(--accent-color);
       }
 
       .category-card:hover::before {
         background: linear-gradient(
           135deg,
-          rgba(0, 0, 0, 0.3) 0%,
-          rgba(0, 0, 0, 0.1) 50%,
-          rgba(0, 0, 0, 0.6) 100%
+          rgba(23, 26, 33, 0.2) 0%,
+          rgba(23, 26, 33, 0.1) 50%,
+          rgba(23, 26, 33, 0.6) 100%
         );
       }
 
@@ -92,9 +93,9 @@
         color: var(--primary-text);
         font-size: 2.5rem;
         font-weight: 700;
-        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.9);
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
         z-index: 2;
         transition: all var(--transition-speed) ease;
       }
@@ -102,11 +103,31 @@
       .category-card:hover .category-title {
         transform: translate(-50%, 50%) scale(1.1);
         color: var(--accent-color);
+        text-shadow: 0 0 20px rgba(102, 192, 244, 0.8);
       }
 
       .category-title a {
         color: inherit;
         text-decoration: none;
+      }
+
+      /* Steam-like glow effect */
+      .category-card::after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(45deg, var(--accent-color), transparent, var(--accent-color));
+        border-radius: var(--border-radius);
+        opacity: 0;
+        transition: opacity var(--transition-speed) ease;
+        z-index: -1;
+      }
+
+      .category-card:hover::after {
+        opacity: 0.3;
       }
 
       @media (max-width: 768px) {
@@ -116,7 +137,7 @@
         }
 
         .categories-title {
-          font-size: 2rem;
+          font-size: 2.2rem;
         }
 
         .categories-grid {
@@ -125,11 +146,25 @@
         }
 
         .category-card {
-          height: 220px;
+          height: 250px;
         }
 
         .category-title {
           font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .categories-title {
+          font-size: 1.8rem;
+        }
+
+        .category-card {
+          height: 200px;
+        }
+
+        .category-title {
+          font-size: 1.6rem;
         }
       }
     </style>
